@@ -1,0 +1,1 @@
+document.getElementById("dom").innerHTML="<li>webpack setup</li>";
