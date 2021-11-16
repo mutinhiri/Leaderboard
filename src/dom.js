@@ -1,3 +1,5 @@
 const submit = document.getElementById('submit');
 
-submit.addEventListener('click', console.log('clicked'));
+submit.addEventListener('click', runEvent);
+
+runEvent => {true};
