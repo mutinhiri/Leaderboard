@@ -1,7 +1,3 @@
-const submit = document.getElementById('submit');
+const domElement = [{name: 'Barna', score: 20}, {name: "Svabi", score: 50}, {name: 'Joel', score: 30}]
 
-function runEvent() {
-  return true;
-}
-
-submit.addEventListener('click', runEvent);
+export default domElement

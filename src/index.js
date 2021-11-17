@@ -1,6 +1,15 @@
 import './style.css';
-import './dom.js';
+import domElement from './dom';
 
-const dom = document.getElementById('dom');
+const dom = document.querySelector('.data');
 
-dom.innerHTML = '<li>webpack setup</li>';
+ const domItems = ()=>{
+   domElement.forEach((e)=>{
+     const li = document.createElement('li')
+     li.innerHTML = `${e.name}:${e.score}`;
+     dom.appendChild(li)
+
+   });
+ };
+
+domItems()
