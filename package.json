@@ -20,8 +20,12 @@
   },
   "homepage": "https://github.com/mutinhiri/Leaderboard#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "css": "^3.0.0",
     "css-loader": "^6.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.3",
     "html-webpack-plugin": "^5.5.0",
     "loader": "^2.1.1",
     "style": "^0.0.3",
