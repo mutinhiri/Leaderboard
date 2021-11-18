@@ -20,11 +20,11 @@ form.addEventListener('submit', (e) => {
     score: parseInt(document.getElementById('score').value, 10),
   };
 
-  postScores(game_id, body);
+  postScores(GAME_ID, body);
   document.getElementById('user').value = '';
   document.getElementById('score').value = '';
 });
 
-getScores(game_id).then((scores) => {
-  domItems(scores.result)
+getScores(GAME_ID).then((scores) => {
+  domItems(scores.result);
 });
