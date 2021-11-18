@@ -1,15 +1,34 @@
 import './style.css';
-import domElement from './dom.js';
+import domItems from './dom.js';
+import { getScores, postScores } from "./api-Call";
 
-const dom = document.querySelector('.data');
+const game_id = 'aJt95NEpxjlxmmqFfIJL';
 
-const domItems = (list) => {
-  dom.innerHTML = ''
-  list.forEach((e) => {
-    const li = document.createElement('li');
-    li.innerHTML = `${e.name}:${e.score}`;
-    dom.appendChild(li);
+const refresh = document.getElementById('refresh')
+const form = document.getElementById('form');
+
+refresh.addEventListener('click', () => {
+  getScores(game_id).then((scores)=>{
+    domItems(scores.result)
   });
-};
 
-domItems();
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const body = {
+    user: document.getElementById('user').value,
+    score: parseInt(document.getElementById('score').value,10)
+  };
+
+  postScores(game_id, body);
+  document.getElementById('user').value = '';
+  document.getElementById('score').value = '';
+ 
+});
+
+getScores(game_id).then((scores) => {
+  domItems(scores.result)
+});
+
+// domItems();
