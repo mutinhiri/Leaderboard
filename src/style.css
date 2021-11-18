@@ -1,0 +1,48 @@
+body {
+  background-color: greenyellow;
+}
+
+.main {
+  display: flex;
+  column-gap: 50px;
+  margin-left: 40px;
+  list-style: none;
+}
+
+.recent-header {
+  display: flex;
+  gap: 20px;
+}
+
+.data {
+  border: 2px solid black;
+}
+
+p {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(odd) {
+  background-color: gray;
+}
+
+.input-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+#refresh {
+  height: 20px;
+  margin-top: 34px;
+}
+
+#submit {
+  width: fit-content;
+  margin-left: 118px;
+}
