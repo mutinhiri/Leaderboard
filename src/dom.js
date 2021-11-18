@@ -5,4 +5,8 @@
 const game_id = 'aJt95NEpxjlxmmqFfIJL';
 
 const refresh = document.getElementById('refresh')
-const form = document.getElementById('form')
+const form = document.getElementById('form');
+
+refresh.addEventListener('submit', (e) =>{
+  e.preventDefault()
+})
