@@ -3,8 +3,8 @@ import domElement from './dom.js';
 
 const dom = document.querySelector('.data');
 
-const domItems = () => {
-  domElement.forEach((e) => {
+const domItems = (list) => {
+  list.forEach((e) => {
     const li = document.createElement('li');
     li.innerHTML = `${e.name}:${e.score}`;
     dom.appendChild(li);
