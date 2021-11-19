@@ -1,3 +1,12 @@
-const domElement = [{ name: 'Barna', score: 20 }, { name: 'Svabi', score: 50 }, { name: 'Joel', score: 30 }];
+const dom = document.querySelector('.data');
 
-export default domElement;
+const domItems = (list) => {
+  dom.innerHTML = '';
+  list.forEach((e) => {
+    const li = document.createElement('li');
+    li.innerHTML = `${e.user} : ${e.score}`;
+    dom.appendChild(li);
+  });
+};
+
+export default domItems;

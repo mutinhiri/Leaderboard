@@ -1,5 +1,7 @@
 body {
   background-color: greenyellow;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main {
@@ -9,13 +11,17 @@ body {
   list-style: none;
 }
 
+.recent {
+  margin-right: 40px;
+}
+
 .recent-header {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .data {
-  border: 2px solid black;
+  padding-right: 30px;
 }
 
 p {
@@ -25,6 +31,8 @@ p {
 
 li {
   list-style: none;
+  margin-left: -40px;
+  width: 150px;
 }
 
 li:nth-child(odd) {
@@ -37,12 +45,28 @@ li:nth-child(odd) {
   row-gap: 13px;
 }
 
-#refresh {
-  height: 20px;
-  margin-top: 34px;
-}
-
 #submit {
   width: fit-content;
   margin-left: 118px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+input {
+  border-radius: 9px;
+}
+
+button {
+  height: 30px;
+  border: 2px solid black;
+}
+
+#refresh {
+  border: 2px solid black;
+  height: 30px;
+  margin-top: 34px;
 }

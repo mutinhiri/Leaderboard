@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>template </title>
 </head>
 <body>
@@ -15,17 +18,18 @@
                 <button id="refresh">Refresh</button>
             </div>
             <ul class="data">
-                <li>Name 100</li>
-                <li>Name 70</li>
-                <li>Name 60</li>
+                
             </ul>
         </div>
         <div class="add">
             <p>add your score</p>
             <div class="input-items">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your score">
-                <button id="submit">Submit</button>
+                <form id="form" method="post" action="index.html" >
+                    <input type="text" placeholder="Your name" id="user">
+                    <input type="text" placeholder="Your score" id="score">
+                    <button id="submit" type="submit" class="submit" name="button">Submit</button>
+                </form>
+               
             </div>
            
         </div>
