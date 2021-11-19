@@ -1,5 +1,7 @@
 body {
   background-color: greenyellow;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main {
@@ -19,7 +21,6 @@ body {
 }
 
 .data {
-  border: 2px solid black;
   margin-right: 0px;
   padding-right: 30px;
 }
@@ -32,7 +33,6 @@ p {
 li {
   list-style: none;
   margin-left: -40px;
-  padding-right: 290px;
   width: 150px;
 }
 
@@ -64,4 +64,14 @@ li:nth-child(odd) {
 
 input {
   border-radius: 9px;
+}
+
+button {
+  height: 30px;
+  border: 2px solid black;
+}
+
+#refresh {
+  border: 2px solid black;
+  height: 30px;
 }
