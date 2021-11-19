@@ -21,7 +21,6 @@ body {
 }
 
 .data {
-  margin-right: 0px;
   padding-right: 30px;
 }
 
@@ -44,11 +43,6 @@ li:nth-child(odd) {
   display: flex;
   flex-direction: column;
   row-gap: 13px;
-}
-
-#refresh {
-  height: 20px;
-  margin-top: 34px;
 }
 
 #submit {
@@ -74,4 +68,5 @@ button {
 #refresh {
   border: 2px solid black;
   height: 30px;
+  margin-top: 34px;
 }
