@@ -1,8 +1,9 @@
 # Leaderboard
+![](./leaderboard.png)
 
 To-Do List is a project that showcases my Javascript DOM manipulation experience and ability to the world!
 
-#Live Demo
+# Live Demo
 [link](https://roaring-croissant-89db8c.netlify.app/)
 https://roaring-croissant-89db8c.netlify.app/
 
